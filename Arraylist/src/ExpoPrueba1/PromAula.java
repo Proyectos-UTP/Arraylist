@@ -15,13 +15,13 @@ public class PromAula {
         proms.add(d);
         System.out.println("Los alumnos del aula y su respectiva nota son:");
         for (NotaAlumno var : proms) {
-            System.out.println(var.nombre + ": " + var.prom);
+            System.out.println(var.getNombre() + ": " + var.getProm());
         }
         System.out.println("El promedio del aula es: ");
         double n=0;
         for (NotaAlumno var : proms) {
             n ++;
-            sumanota += var.prom;
+            sumanota += var.getProm();
             promaula = sumanota / n;
         }
         System.out.println(promaula);
